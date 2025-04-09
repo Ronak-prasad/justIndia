@@ -22,22 +22,15 @@ fun Header() {
         modifier = Modifier
             .fillMaxWidth()
             .height(120.dp)
-            .background(
-                brush = Brush.linearGradient(
-                    colors = listOf(
-                        Color(0xFFFFA500),
-                        Color(0xFFEAE6DB),
-                        Color(0xFF008000)
-                    )
-                )
-            )
+            .background(color = Color.Transparent)
     ) {
         Image(
             painter = painterResource(id = R.drawable.logo),
             contentDescription = null,
             modifier = Modifier
-                .height(200.dp)
-                .width(100.dp)
+                .fillMaxHeight()
+                .width(200.dp)
+                .background(color = Color.Transparent)
         )
     }
 }
